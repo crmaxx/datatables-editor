@@ -1,0 +1,32 @@
+{
+  "name": "datatables-editor",
+  "version": "1.4.2",
+  "description": "Editor provides the ability for end users to quickly and easily edit data contained in a DataTable.",
+  "main": [
+    "js/dataTables.editor.js",
+    "css/dataTables.editor.css",
+    "images/ajax-loader-small.gif",
+    "images/ajax-loader.gif",
+    "images/calender.png",
+    "images/close.png",
+    "images/shadow_left.png",
+    "images/shadow_right.png"
+  ],
+  "keywords": [
+    "datatables",
+    "editor",
+    "jquery",
+    "table",
+    "javascript",
+    "library"
+  ],
+  "ignore": [
+    "css/scss"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "datatables": ">=1.9.4"
+  },
+  "license": "MIT",
+  "homepage": "https://editor.datatables.net"
+}
