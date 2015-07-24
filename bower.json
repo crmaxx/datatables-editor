@@ -27,6 +27,6 @@
     "jquery": ">=1.7.0",
     "datatables": ">=1.9.4"
   },
-  "license": "MIT",
+  "license": "http://editor.datatables.net/license",
   "homepage": "https://editor.datatables.net"
 }
