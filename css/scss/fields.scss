@@ -47,6 +47,39 @@ div.DTE_Field {
 		color: red;
 		margin-top: 5px;
 	}
+
+	div.multi-value {
+		display: none;
+		border: 1px dotted #666;
+		border-radius: 3px;
+		padding: 5px;
+		background-color: #fafafa;
+		cursor: pointer;
+
+		span {
+			font-size: 0.8em;
+			line-height: 1.25em;
+			display: block;
+			color: #666;
+		}
+
+		&:hover {
+			background-color: #f1f1f1;
+		}
+	}
+
+	div.multi-restore {
+		display: none;
+		margin-top: 0.5em;
+		font-size: 0.8em;
+		line-height: 1.25em;
+		color: #3879d9;
+
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
 }
 
 // Specific field type styling
@@ -90,3 +123,6 @@ div.DTE_Field_Type_radio {
 	}
 }
 
+div.DTE_Field_Type_select div.DTE_Field_Input {
+	padding-top: 4px;
+}

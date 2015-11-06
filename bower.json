@@ -1,6 +1,6 @@
 {
   "name": "datatables-editor",
-  "version": "1.4.2",
+  "version": "1.5.1",
   "description": "Editor provides the ability for end users to quickly and easily edit data contained in a DataTable.",
   "main": [
     "js/dataTables.editor.js",

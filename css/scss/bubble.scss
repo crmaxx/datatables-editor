@@ -106,6 +106,22 @@ div.DTE_Bubble {
 			background: url('../images/ajax-loader-small.gif') no-repeat top left;
 		}
 	}
+
+	&.below {
+		div.DTE_Bubble_Liner {
+			top: 10px;
+			bottom: auto;
+		}
+
+		div.DTE_Bubble_Triangle {
+			top: 4px;
+			-webkit-transform: rotate(135deg);
+			   -moz-transform: rotate(135deg);
+			    -ms-transform: rotate(135deg);
+			     -o-transform: rotate(135deg);
+			        transform: rotate(135deg);
+		}
+	}
 }
 
 div.DTE_Bubble_Background {

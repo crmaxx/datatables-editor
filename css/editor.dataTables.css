@@ -52,7 +52,7 @@ div.DTE div.DTE_Form_Error {
   display: none;
   color: #b11f1f;
 }
-div.DTE button.DTE_Button,
+div.DTE button.btn,
 div.DTE div.DTE_Form_Buttons button {
   position: relative;
   text-align: center;
@@ -61,6 +61,7 @@ div.DTE div.DTE_Form_Buttons button {
   padding: 5px 15px;
   cursor: pointer;
   float: right;
+  margin-left: 0.75em;
   font-size: 14px;
   text-shadow: 0 1px 0 white;
   border: 1px solid #999;
@@ -69,28 +70,28 @@ div.DTE div.DTE_Form_Buttons button {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 3px #cccccc;
-  -moz-box-shadow: 1px 1px 3px #cccccc;
-  box-shadow: 1px 1px 3px #cccccc;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  -moz-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
   background-color: #f9f9f9 100%;
   /* Fallback */
-  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 65%, #f9f9f9 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #eee 65%, #f9f9f9 100%);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, white 0%, #eeeeee 65%, #f9f9f9 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #eee 65%, #f9f9f9 100%);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(top, white 0%, #eeeeee 65%, #f9f9f9 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 0%, #eee 65%, #f9f9f9 100%);
   /* IE10 */
-  background-image: -o-linear-gradient(top, white 0%, #eeeeee 65%, #f9f9f9 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #eee 65%, #f9f9f9 100%);
   /* Opera 11.10+ */
-  background-image: linear-gradient(top, white 0%, #eeeeee 65%, #f9f9f9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#f9f9f9');
+  background-image: linear-gradient(top, #ffffff 0%, #eee 65%, #f9f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#f9f9f9');
 }
-div.DTE button.DTE_Button:hover,
+div.DTE button.btn:hover,
 div.DTE div.DTE_Form_Buttons button:hover {
   border: 1px solid #666;
-  -webkit-box-shadow: 1px 1px 3px #999999;
-  -moz-box-shadow: 1px 1px 3px #999999;
-  box-shadow: 1px 1px 3px #999999;
+  -webkit-box-shadow: 1px 1px 3px #999;
+  -moz-box-shadow: 1px 1px 3px #999;
+  box-shadow: 1px 1px 3px #999;
   background-color: #f4f4f4 100%;
   /* Fallback */
   background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #dbdbdb 65%, #f4f4f4 100%);
@@ -104,13 +105,13 @@ div.DTE div.DTE_Form_Buttons button:hover {
   background-image: linear-gradient(top, #f3f3f3 0%, #dbdbdb 65%, #f4f4f4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f3f3f3', EndColorStr='#f4f4f4');
 }
-div.DTE button.DTE_Button:active,
+div.DTE button.btn:active,
 div.DTE div.DTE_Form_Buttons button:active {
-  -webkit-box-shadow: inset 1px 1px 3px #999999;
-  -moz-box-shadow: inset 1px 1px 3px #999999;
-  box-shadow: inset 1px 1px 3px #999999;
+  -webkit-box-shadow: inset 1px 1px 3px #999;
+  -moz-box-shadow: inset 1px 1px 3px #999;
+  box-shadow: inset 1px 1px 3px #999;
 }
-div.DTE button.DTE_Button:focus,
+div.DTE button.btn:focus,
 div.DTE div.DTE_Form_Buttons button:focus {
   border: 1px solid #426c9e;
   text-shadow: 0 1px 0 #c4def1;
@@ -128,7 +129,7 @@ div.DTE div.DTE_Form_Buttons button:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a3d0ef', EndColorStr='#a3d0ef');
   outline: none;
 }
-div.DTE button.DTE_Button:focus:after,
+div.DTE button.btn:focus:after,
 div.DTE div.DTE_Form_Buttons button:focus:after {
   position: absolute;
   top: 0;
@@ -172,42 +173,34 @@ div.DTE.DTE_Action_Remove div.DTE_Body_Content {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.2;
   }
 }
-
 @-moz-keyframes buttonPulse {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.2;
   }
 }
-
 @-o-keyframes buttonPulse {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.2;
   }
 }
-
 @keyframes buttonPulse {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.2;
   }
 }
-
 div.DTTT_container {
   float: left;
 }
@@ -252,6 +245,34 @@ div.DTE_Field div.DTE_Field_Error {
   color: red;
   margin-top: 5px;
 }
+div.DTE_Field div.multi-value {
+  display: none;
+  border: 1px dotted #666;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+div.DTE_Field div.multi-value span {
+  font-size: 0.8em;
+  line-height: 1.25em;
+  display: block;
+  color: #666;
+}
+div.DTE_Field div.multi-value:hover {
+  background-color: #f1f1f1;
+}
+div.DTE_Field div.multi-restore {
+  display: none;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  line-height: 1.25em;
+  color: #3879d9;
+}
+div.DTE_Field div.multi-restore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 div.DTE_Field_Type_textarea textarea {
   padding: 3px;
@@ -281,6 +302,10 @@ div.DTE_Field_Type_checkbox div.DTE_Field_Input > div > div label,
 div.DTE_Field_Type_radio div.DTE_Field_Input > div > div label {
   margin-left: 0.75em;
   vertical-align: middle;
+}
+
+div.DTE_Field_Type_select div.DTE_Field_Input {
+  padding-top: 4px;
 }
 
 div.DTE_Body {
@@ -322,6 +347,20 @@ div.DTE_Body div.DTE_Body_Content div.DTE_Field > div.DTE_Field_Input {
   float: right;
   width: 60%;
 }
+div.DTE_Body div.DTE_Body_Content div.DTE_Field.full {
+  padding: 5px 0 5px 20%;
+}
+div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > label {
+  width: 30%;
+}
+div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > div.DTE_Field_Input {
+  width: 70%;
+}
+div.DTE_Body div.DTE_Body_Content div.DTE_Field.block > div.DTE_Field_Input {
+  float: none;
+  clear: both;
+  width: 100%;
+}
 
 html[dir="rtl"] div.DTE_Body div.DTE_Body_Content div.DTE_Field > label {
   float: right;
@@ -337,10 +376,34 @@ html[dir="rtl"] div.DTE div.DTE_Form_Buttons button {
   div.DTE_Body div.DTE_Body_Content div.DTE_Field {
     padding: 5px 10%;
   }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full {
+    padding: 5px 0 5px 10%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > label {
+    width: 35.5%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > div.DTE_Field_Input {
+    width: 64.5%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.block > div.DTE_Field_Input {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 640px) {
   div.DTE_Body div.DTE_Body_Content div.DTE_Field {
     padding: 5px 0;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full {
+    padding: 5px 0%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > label {
+    width: 40%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > div.DTE_Field_Input {
+    width: 60%;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.block > div.DTE_Field_Input {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 580px) {
@@ -348,7 +411,7 @@ html[dir="rtl"] div.DTE div.DTE_Form_Buttons button {
     position: relative;
     zoom: 1;
     clear: both;
-    padding: 5px;
+    padding: 5px 0;
   }
   div.DTE_Body div.DTE_Body_Content div.DTE_Field > label {
     float: none;
@@ -358,6 +421,14 @@ html[dir="rtl"] div.DTE div.DTE_Form_Buttons button {
   div.DTE_Body div.DTE_Body_Content div.DTE_Field > div.DTE_Field_Input {
     float: none;
     width: auto;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full, div.DTE_Body div.DTE_Body_Content div.DTE_Field.block {
+    padding: 5px 0;
+  }
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > label,
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.full > div.DTE_Field_Input, div.DTE_Body div.DTE_Body_Content div.DTE_Field.block > label,
+  div.DTE_Body div.DTE_Body_Content div.DTE_Field.block > div.DTE_Field_Input {
+    width: 100%;
   }
 }
 div.DTE_Bubble {
@@ -430,7 +501,6 @@ div.DTE_Bubble div.DTE_Bubble_Liner div.DTE_Bubble_Close {
   text-align: center;
   border-radius: 15px;
   cursor: pointer;
-  *cursor: hand;
   z-index: 12;
   box-shadow: 2px 2px 6px #111;
 }
@@ -469,6 +539,18 @@ div.DTE_Bubble.DTE_Processing div.DTE_Bubble_Liner:after {
   height: 12px;
   width: 17px;
   background: url("../images/ajax-loader-small.gif") no-repeat top left;
+}
+div.DTE_Bubble.below div.DTE_Bubble_Liner {
+  top: 10px;
+  bottom: auto;
+}
+div.DTE_Bubble.below div.DTE_Bubble_Triangle {
+  top: 4px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 div.DTE_Bubble_Background {
@@ -638,7 +720,6 @@ div.DTED_Lightbox_Wrapper div.DTED_Lightbox_Container div.DTED_Lightbox_Content_
   text-align: center;
   border-radius: 15px;
   cursor: pointer;
-  *cursor: hand;
   z-index: 12;
   box-shadow: 2px 2px 6px #111;
 }
@@ -806,9 +887,9 @@ div.DTED_Envelope_Wrapper div.DTED_Envelope_Container div.DTED_Envelope_Close {
   text-align: center;
   font-size: 12px;
   background: #F8F8F8;
-  background: -webkit-gradient(linear, center bottom, center top, from(#cccccc), to(white));
-  background: -moz-linear-gradient(top, white, #cccccc);
-  background: linear-gradient(top, white, #cccccc);
+  background: -webkit-gradient(linear, center bottom, center top, from(#CCC), to(white));
+  background: -moz-linear-gradient(top, white, #CCC);
+  background: linear-gradient(top, white, #CCC);
   text-shadow: 0 1px 0 white;
   border: 1px solid #999;
   border-radius: 2px;
@@ -843,7 +924,7 @@ div.DTED_Envelope_Background {
 }
 
 table.dataTable tbody tr.highlight {
-  background-color: #fffbcc !important;
+  background-color: #FFFBCC !important;
 }
 table.dataTable tbody tr.highlight,
 table.dataTable tbody tr.noHighlight,
@@ -863,17 +944,17 @@ table.dataTable.hover tbody tr.odd:hover.highlight,
 table.dataTable.hover tbody tr.even:hover.highlight, table.dataTable.display tbody tr:hover.highlight,
 table.dataTable.display tbody tr.odd:hover.highlight,
 table.dataTable.display tbody tr.even:hover.highlight {
-  background-color: #f5f1c4;
+  background-color: #f6f2c5;
 }
 table.dataTable.order-column tbody tr.highlight > .sorting_1,
 table.dataTable.order-column tbody tr.highlight > .sorting_2,
 table.dataTable.order-column tbody tr.highlight > .sorting_3, table.dataTable.display tbody tr.highlight > .sorting_1,
 table.dataTable.display tbody tr.highlight > .sorting_2,
 table.dataTable.display tbody tr.highlight > .sorting_3 {
-  background-color: #f9f5c7;
+  background-color: #faf6c8;
 }
 table.dataTable.display tbody tr.odd.highlight > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.highlight > .sorting_1 {
-  background-color: #f1edc0;
+  background-color: #f1edc1;
 }
 table.dataTable.display tbody tr.odd.highlight > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.highlight > .sorting_2 {
   background-color: #f3efc2;
@@ -882,13 +963,13 @@ table.dataTable.display tbody tr.odd.highlight > .sorting_3, table.dataTable.ord
   background-color: #f5f1c4;
 }
 table.dataTable.display tbody tr.even.highlight > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.highlight > .sorting_1 {
-  background-color: #f9f5c7;
+  background-color: #faf6c8;
 }
 table.dataTable.display tbody tr.even.highlight > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.highlight > .sorting_2 {
-  background-color: #fbf7c9;
+  background-color: #fcf8ca;
 }
 table.dataTable.display tbody tr.even.highlight > .sorting_3, table.dataTable.order-column.stripe tbody tr.even.highlight > .sorting_3 {
-  background-color: #fdf9cb;
+  background-color: #fefacb;
 }
 table.dataTable.display tbody tr:hover.highlight > .sorting_1,
 table.dataTable.display tbody tr.odd:hover.highlight > .sorting_1,
@@ -902,12 +983,120 @@ table.dataTable.display tbody tr.odd:hover.highlight > .sorting_2,
 table.dataTable.display tbody tr.even:hover.highlight > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.highlight > .sorting_2,
 table.dataTable.order-column.hover tbody tr.odd:hover.highlight > .sorting_2,
 table.dataTable.order-column.hover tbody tr.even:hover.highlight > .sorting_2 {
-  background-color: #ebe8bc;
+  background-color: #ece8bd;
 }
 table.dataTable.display tbody tr:hover.highlight > .sorting_3,
 table.dataTable.display tbody tr.odd:hover.highlight > .sorting_3,
 table.dataTable.display tbody tr.even:hover.highlight > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.highlight > .sorting_3,
 table.dataTable.order-column.hover tbody tr.odd:hover.highlight > .sorting_3,
 table.dataTable.order-column.hover tbody tr.even:hover.highlight > .sorting_3 {
-  background-color: #eeebbf;
+  background-color: #efebbf;
+}
+
+div.DTE div.editor_upload {
+  padding-top: 4px;
+}
+div.DTE div.editor_upload div.eu_table {
+  display: table;
+  width: 100%;
+}
+div.DTE div.editor_upload div.row {
+  display: table-row;
+}
+div.DTE div.editor_upload div.cell {
+  display: table-cell;
+  position: relative;
+  width: 50%;
+  vertical-align: top;
+}
+div.DTE div.editor_upload div.cell + div.cell {
+  padding-left: 10px;
+}
+div.DTE div.editor_upload div.row + div.row div.cell {
+  padding-top: 10px;
+}
+div.DTE div.editor_upload button.btn,
+div.DTE div.editor_upload input[type=file] {
+  width: 100%;
+  height: 2.3em;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+}
+div.DTE div.editor_upload input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+div.DTE div.editor_upload div.drop {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px dashed #ccc;
+  border-radius: 6px;
+  min-height: 4em;
+  color: #999;
+  padding-top: 3px;
+  text-align: center;
+}
+div.DTE div.editor_upload div.drop.over {
+  border: 3px dashed #111;
+  color: #111;
+}
+div.DTE div.editor_upload div.drop span {
+  max-width: 75%;
+  font-size: 0.85em;
+  line-height: 1em;
+}
+div.DTE div.editor_upload div.rendered img {
+  max-width: 8em;
+  margin: 0 auto;
+}
+div.DTE div.editor_upload.noDrop div.drop {
+  display: none;
+}
+div.DTE div.editor_upload.noDrop div.row.second {
+  display: none;
+}
+div.DTE div.editor_upload.noDrop div.rendered {
+  margin-top: 10px;
+}
+div.DTE div.editor_upload.noClear div.clearValue button {
+  display: none;
+}
+div.DTE div.editor_upload.multi div.cell {
+  display: block;
+  width: 100%;
+}
+div.DTE div.editor_upload.multi div.cell div.drop {
+  min-height: 0;
+  padding-bottom: 5px;
+}
+div.DTE div.editor_upload.multi div.clearValue {
+  display: none;
+}
+div.DTE div.editor_upload.multi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div.DTE div.editor_upload.multi ul li {
+  position: relative;
+  margin-top: 0.5em;
+}
+div.DTE div.editor_upload.multi ul li:first-child {
+  margin-top: 0;
+}
+div.DTE div.editor_upload.multi ul li img {
+  vertical-align: middle;
+}
+div.DTE div.editor_upload.multi ul li button {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  top: 50%;
+  margin-top: -1.5em;
 }
